@@ -62,5 +62,4 @@ This tool is designed to help students save time on mandatory administrative tas
 
 MIT
 
----
 Made with ❤️ for VTOP students ✨

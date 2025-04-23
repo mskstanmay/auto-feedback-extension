@@ -1,0 +1,17 @@
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+.qodo
+*.log
+temp/
+
+# Node (if you add npm in future)
+node_modules/
+package-lock.json

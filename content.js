@@ -13,11 +13,12 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             groups[radio.name].push(radio);
         });
 
-        // Select first radio button in each group
+        // Select random radio button (0-3) in each group
         Object.values(groups).forEach(group => {
             if (group.length > 0) {
-                group[0].checked = true;
-                group[0].dispatchEvent(new Event('change', { bubbles: true }));
+                const randomIndex = Math.floor(Math.random() * Math.min(4, group.length));
+                group[randomIndex].checked = true;
+                group[randomIndex].dispatchEvent(new Event('change', { bubbles: true }));
             }
         });
 

@@ -28,6 +28,17 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
             field.dispatchEvent(new Event('input', { bubbles: true }));
         });
 
+        // Find and click submit button
+        setTimeout(() => {
+            const submitButton = Array.from(document.querySelectorAll('button')).find(
+                button => button.textContent.toLowerCase().includes('submit')
+            );
+            
+            if (submitButton) {
+                submitButton.click();
+            }
+        }, 500); // Small delay to ensure form is filled first
+
         sendResponse({ success: true });
     }
 });

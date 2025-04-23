@@ -1,13 +1,20 @@
-# Auto Feedback Chrome Extension
+# Auto Feedback Chrome Extension ✨
 
-A simple Chrome extension to automate feedback form filling.
+A time-saving Chrome extension specifically designed to automate the tedious VTOP feedback form filling process. Say goodbye to the frustration of filling multiple feedback forms manually!
+
+## Purpose
+
+Tired of spending time filling out mandatory VTOP feedback forms for each course? This extension is your solution! It automatically handles the repetitive task of choosing buttons and typing feedback text in each subject's feedback form, saving precious time for students.
 
 ## Features
 
-- One-click form filling
-- Automatically selects first radio button in each group
-- Fills text fields with a default character
-- Easy to toggle on/off via popup
+- One-click automation for VTOP feedback forms
+- Randomly selects responses to maintain variety
+- Auto-fills required text fields
+- Instant form submission
+- Auto-deactivates for safety
+- Clean, user-friendly interface
+- Perfect for end-semester feedback submission
 
 ## Installation
 
@@ -18,21 +25,42 @@ A simple Chrome extension to automate feedback form filling.
 
 ## Usage
 
-1. Click the extension icon in your Chrome toolbar
-2. Click the "Turn ON" button to activate
-3. The extension will automatically:
-   - Select the first radio button in each group
-   - Fill all text fields with a dot (.)
-4. Click "Turn OFF" to deactivate
+1. Navigate to the VTOP feedback page
+2. Click the extension icon in Chrome toolbar
+3. Click "Turn ON" and watch the magic happen!
+4. The extension will:
+   - Fill all required fields automatically
+   - Submit the form
+   - Turn off by itself after completion
 
-## Development
+## Safety Features
 
-To modify or enhance the extension:
+- Auto-deactivates after 2 seconds
+- Visual status indicator
+- Works only on feedback forms
 
-1. Make your changes to the source files
-2. Reload the extension in `chrome://extensions/`
-3. Test your changes
+## Why Use This?
+
+- Saves hours of repetitive form filling
+- Reduces end-semester stress
+- Helps complete mandatory feedback requirements quickly
+- Perfect for busy students
+
+## Note
+
+This tool is designed to help students save time on mandatory administrative tasks, allowing more focus on important academic activities! ✨
+
+## Recent Updates
+
+- Added random selection for radio buttons
+- Implemented auto-submit functionality
+- Added visual status indicator
+- Added auto-deactivation feature
+- Improved UI with modern styling
 
 ## License
 
 MIT
+
+---
+Made with ❤️ for VTOP students ✨

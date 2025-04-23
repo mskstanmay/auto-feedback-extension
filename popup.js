@@ -16,6 +16,15 @@ document.getElementById('toggleExtension').addEventListener('click', async () =>
     if (response.status) {
         const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
         chrome.tabs.sendMessage(tab.id, { action: 'autoFill' });
+        
+        // Automatically turn off after 2 seconds
+        setTimeout(async () => {
+            const response = await chrome.runtime.sendMessage({
+                type: 'toggleExtension',
+                value: false
+            });
+            updateUI(response.status);
+        }, 2000);
     }
 });
 

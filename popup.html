@@ -89,11 +89,29 @@
       border: 1px solid #dee2e6;
       margin-bottom: 12px;
     }
+
+    /* Add styles for the description text */
+    .description {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .credit {
+      font-size: 10px;
+      color: #555657;
+      text-align: right;
+      margin-top: 8px;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
   <h2>Auto Feedback <span id="status" class="status-dot"></span></h2>
+  <p class="description">This will randomly select one of the options from the buttons and put a dot(.) in each text field and submit the form</p>
   <button id="toggleExtension" class="toggle-btn">Turn ON</button>
+  <p class="credit">- By Mskstanmay</p>
   <script src="popup.js"></script>
 </body>
 </html>
